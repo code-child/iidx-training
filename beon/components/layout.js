@@ -11,7 +11,7 @@ function Layout({ children }) {
     <div className="flex flex-col min-h-screen min-w-full">
       <Header />
       <Container>
-        <div className="flex-1 w-full p-4 mx-auto md:px-8 md:py-16">   
+        <div className="flex-1 w-full p-4 mx-auto">   
         {children}
         </div>
       </Container>

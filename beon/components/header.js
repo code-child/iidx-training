@@ -7,7 +7,7 @@ function Header() {
   const router = useRouter();
 
   return (
-    <header className="font-sans bg-pink-800">
+    <header className="fixed w-full z-10 font-sans bg-pink-800">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap md:p-8">
         <div className="flex items-center">
           <img src="beon.svg" className="w-10 mr-3 text-white" />
