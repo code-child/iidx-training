@@ -37,11 +37,13 @@ function Header() {
         >
           {[
             { title: "Home", route: "/" },
-            { title: "About", route: "/about" }
+            { title: "About", route: "/about" },
+            { title: "Community List", route: "/community-list" },
+            { title: "Contact", route: "/contact"}
           ].map(navigationItem => (
-            <li className={`${router.pathname == `${navigationItem.route}` ? `font-extrabold` : "" } mt-3 md:mt-0 md:ml-6`} key={navigationItem.title}>
-              <Link href={navigationItem.route}>
-                <a className="block text-white">{navigationItem.title}</a>
+            <li className={`${router.pathname == `${navigationItem.route}` ? `font-extrabold` : "" } mt-6 md:mt-0 md:ml-8`} key={navigationItem.title}>
+              <Link href={ navigationItem.route }>
+                <a className="block text-white">{ navigationItem.title }</a>
               </Link>
             </li>
           ))}
